@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom js</title>
+</head>
+<body>
+    <h1 id="title">welcome !</h1>
+    <button onclick="changeTitle()">click me</button>
+<script>
+    function changeTitle(){
+
+        let heading=document.getElementById("title");
+
+        heading.style.color = "green";
+        //change text content
+        heading.textContent = "Hello World!";
+
+
+    }
+    </script>
+</body>
+</html>
