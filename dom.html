@@ -8,6 +8,8 @@
 <body>
     <h1 id="title">welcome !</h1>
     <button onclick="changeTitle()">click me</button>
+    <button id="btn_event">click event</button>
+    <p id="lorem_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quod numquam debitis deleniti labore eveniet qui facere blanditiis non quia animi est, doloremque rerum accusantium, earum ullam? Repudiandae, itaque illum.</p>
 <script>
     function changeTitle(){
 
@@ -18,7 +20,16 @@
         heading.textContent = "Hello World!";
 
 
+    };
+    //event listener
+    let btn2=document.getElementById("btn_event"); //vaariable
+    
+
+    btn2.addEventListener("click",function(){
+        document.getElementById("lorem_text").textContent="the text has been changed ";
     }
+
+    )
     </script>
 </body>
 </html>
